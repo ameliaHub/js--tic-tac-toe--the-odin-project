@@ -1,0 +1,26 @@
+/* reset general */
+
+/* reset de márgenes, padding y bordes */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el tamaño total del elemento */
+}
+
+/* Eliminar estilos predeterminados de listas, enlaces y formularios */
+ul, ol {
+    list-style: none; /* Quitar los puntos o números de las listas */
+}
+  
+a {
+    text-decoration: none; /* Eliminar el subrayado de los enlaces */
+}
+  
+button {
+    background: none; /* Eliminar el fondo por defecto */
+    border: none; /* Eliminar el borde por defecto */
+    cursor: pointer; /* Cambiar el cursor a mano para indicar que es clickeable */
+}
