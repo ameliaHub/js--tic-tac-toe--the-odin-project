@@ -24,3 +24,75 @@ button {
     border: none; /* Eliminar el borde por defecto */
     cursor: pointer; /* Cambiar el cursor a mano para indicar que es clickeable */
 }
+
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    gap: 15px;
+}
+
+/* Estilo del tablero */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+    gap: 5px;
+    
+}
+
+/* Estilo de cada celda */
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #000;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.cell:hover {
+    background-color: #e0e0e0;
+}
+
+.cell.X {
+    color: #ff4757; /* Rojo para X */
+}
+
+.cell.O {
+    color: #1e90ff; /* Azul para O */
+}
+
+/* Estilo del botón */
+.reset-button{
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.reset-button:hover{
+    background-color: #218838;
+}
+
+.reset-button:active{
+    transform: scale(0.95);
+}
